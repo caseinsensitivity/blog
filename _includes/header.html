@@ -1,0 +1,20 @@
+<header id="site-header" class="site-head">
+    <div class="site-head-content">
+        Header
+    </div>
+</header>
+<script type="text/javascript">
+    window.onscroll = function() {checkHeader()};
+
+    var header = document.getElementById("site-header");
+
+    var sticky =  header.offsetTop;
+
+    function checkHeader() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");   
+        }
+    }
+</script>

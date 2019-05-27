@@ -23,8 +23,17 @@
     "@context":"http://schema.org"
   }</script>
   <!-- End Jekyll SEO tag -->
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/reset.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+  <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
   </head>
 <body>
-    {{ content }}
+    <div id="blog">
+      {% include header.html %}
+      <div class="wrap clearfix">
+        {{ content }}
+        <div style="height: 5000px">&nbsp;</div>
+      </div>
+    </div>
 </body>
