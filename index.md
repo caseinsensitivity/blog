@@ -5,4 +5,4 @@
 layout: home
 ---
 
-The case-insensitivity blog is coming soon.
+The case-insensitivity blog is coming soon!
