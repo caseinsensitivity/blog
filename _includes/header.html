@@ -1,6 +1,8 @@
 <header id="site-header" class="site-head">
     <div class="site-head-content">
-        Header
+        <a class="logo" href="/"><img src="{{ "/assets/img/logo.png" | relative_url }}" border="0"  /></a>
+        <h1>Case-Insensitivity</h1>
+        <h2>A blog about development, devops, and dataops.</h2>
     </div>
 </header>
 <script type="text/javascript">
@@ -8,7 +10,7 @@
 
     var header = document.getElementById("site-header");
 
-    var sticky =  header.offsetTop;
+    var sticky =  header.offsetTop + header.offsetHeight;
 
     function checkHeader() {
         if (window.pageYOffset > sticky) {
