@@ -30,14 +30,14 @@ html {
     }
 
     h1 {
-        font-size: 3.2rem;
+        font-size: $title-h1-size;
         font-weight: 700;
         text-indent: -1px;
         margin: 0;
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: $title-h2-size;
         line-height: 1em;
         text-indent: -1px;
         margin: 0;
