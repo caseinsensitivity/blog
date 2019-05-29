@@ -5,7 +5,7 @@
 html {
   font-size: $root-font-size; 
    
-   @media (min-width: 768px) {
+   @media (max-width: 768px) {
     font-size: 50%;
   }
 }
