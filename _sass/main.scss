@@ -3,7 +3,11 @@
 }
 
 html {
-  font-size: $root-font-size;   
+  font-size: $root-font-size; 
+   
+   @media (min-width: 768px) {
+    font-size: 50%;
+  }
 }
 
 body {
