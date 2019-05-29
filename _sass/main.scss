@@ -6,12 +6,18 @@ html {
   font-size: $root-font-size;   
 }
 
+body {
+    margin: 8px;
+}
+
 #site-header {
     z-index: 999;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #fff;
+    margin: $header-margin;
+    padding-bottom: 14px;
 
     &.sticky {    
         border-bottom: solid 1px $border-color-light;
@@ -20,7 +26,6 @@ html {
     .logo {
         float: left;
         padding: 6px 12px 6px 0;
-        margin-top: -8px;
 
         img {
             height: 52px;
