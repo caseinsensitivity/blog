@@ -67,12 +67,8 @@ body {
 #content {
     max-width: $content-max-width;
     margin: 0 auto;
-    padding: 8px 120px 8px 60px;
+    padding: 120px 8px 60px 8px;
     position: relative;
-
-    @media (max-width: 768px) {
-      padding-top: 160px;
-    }
 
 }
 
