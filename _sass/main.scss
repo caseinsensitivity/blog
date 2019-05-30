@@ -5,7 +5,7 @@
 html {
   font-size: $root-font-size; 
    
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 50%;
   }
 }
@@ -69,6 +69,11 @@ body {
     margin: 0 auto;
     padding: 8px 120px 8px 60px;
     position: relative;
+
+    @media (max-width: 768px) {
+      padding-top: 160px;
+    }
+
 }
 
 /*
