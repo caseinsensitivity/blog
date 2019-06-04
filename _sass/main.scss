@@ -3,11 +3,14 @@
 }
 
 html {
-  font-size: $root-font-size;   
+  font-size: $root-font-size; 
+   
+  @media (max-width: 768px) {
+    font-size: 50%;
+  }
 }
 
 body {
-    margin: 0;
 }
 
 #site-header {
@@ -16,8 +19,8 @@ body {
     top: 0;
     width: 100%;
     background-color: #fff;
-    margin: $header-margin;
-    padding-bottom: 14px;
+    margin: 0;
+    padding: 8px 8px 14px 8px;
 
     &.sticky {    
         border-bottom: solid 1px $border-color-light;
@@ -64,9 +67,9 @@ body {
 .wrap {
     max-width: $content-max-width;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding: 120px 8px 60px 8px;
     position: relative;
+
 }
 
 .wrap.two-column {
