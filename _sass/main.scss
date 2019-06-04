@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    margin: 8px;
+    margin: 0;
 }
 
 #site-header {
@@ -61,13 +61,27 @@ body {
 
 }
 
-#content {
+.wrap {
     max-width: $content-max-width;
     margin: 0 auto;
     padding-top: 100px;
     padding-bottom: 60px;
     position: relative;
 }
+
+.wrap.two-column {
+    display: flex;
+
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        flex: 1;
+    }
+}
+
+
 
 /*
 footer.site-foot .site-foot-content {

@@ -31,9 +31,13 @@
 <body>
     <div id="blog">
       {% include header.html %}
-      <div id="content" class="wrap clearfix">
-        {{ content }}
-        <div style="height: 5000px">&nbsp;</div>
+      <div class="wrap two-column">
+        <div id="sidebar">
+          {% include recent_posts.html %}
+        </div>
+        <div id="content">
+          {{ content }}
+        </div>
       </div>
     </div>
 </body>
