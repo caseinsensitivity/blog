@@ -27,6 +27,9 @@ github_username:  caseinsensitivity
 # Build settings
 markdown: kramdown
 
+# Sets the syntax highlighter
+highlighter: rouge
+
 plugins:
   - jekyll-feed
 

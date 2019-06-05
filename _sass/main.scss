@@ -10,9 +10,6 @@ html {
   }
 }
 
-body {
-}
-
 #site-header {
     z-index: 999;
     position: fixed;
@@ -77,6 +74,12 @@ body {
 
     #sidebar {
         width: 200px;
+
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
     }
 
     #content {
